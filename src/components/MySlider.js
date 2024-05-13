@@ -1,23 +1,26 @@
 import { useState } from "react"
 
-function MySlider(props){
-    const[value,setValue]=useState(0);
-    const handleChange = (e)=>{
+function MySlider({label,onChange}){
+    const[value,setValue]=useState(128);
+    const handleSliderChange = (e)=>{
         setValue(e.target.value);
+        if(onChange){
+            onChange(e.target.value);
+        }
     };
     return(
         <diV>
-        <span>{props.color}</span>
+        <span>{label}</span>
         <input
         type="range"
         width="400"
         min="0"
         max="255"
         value={value}
-        onChange={handleChange}
+        onChange={handleSliderChange}
         />
         <span>{value}</span>
         </diV>
-    )
-};
+    );
+}
 export default MySlider;
