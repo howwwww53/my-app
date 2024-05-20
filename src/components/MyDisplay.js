@@ -1,10 +1,10 @@
-import React  from "react";
+import React from 'react';
+import './calculator.css';
 
-function MyDisplay(){
-    return(
-    <div className="display">
-        <p>計算機</p>
-    </div>
-    )
+function MyDisplay(props){
+    return(<div className='display'>
+        {props.result}
+    </div>);
 }
+
 export default MyDisplay;
