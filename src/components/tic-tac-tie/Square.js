@@ -1,6 +1,6 @@
 import React from "react";
 
-function Square(){
+function Square({value,onSquareClick}){
     return(
         <button className='square'>1</button>
     );
