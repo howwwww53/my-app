@@ -3,6 +3,7 @@ import MyRGBPanel from './components/rgbpanel/MyRGBPanel';
 import MyCalculator from './components/calculator/MyCalculator';
 import Square from './components/tic-tac-tie/Square';
 import Board from "./components/tic-tac-tie/Board"
+import TicTacToe from './components/tic-tac-tie/TicTacToe';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <h2>MyCalculator</h2>
         <MyCalculator />
         <h1>Tic-Tac-Toe</h1>
-        <Board />
+        <TicTacToe />
       </header>
     </div>
   );
