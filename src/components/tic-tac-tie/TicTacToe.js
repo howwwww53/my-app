@@ -16,7 +16,7 @@ function TicTacToe(){
     const moves = history.map((squares,move)=>{
     let description;
     if(move>0){
-        description="回到第 "+move+" 布";
+        description="回到第 "+move+" 步";
     }else {
         description="遊戲開始";
     }
@@ -35,7 +35,7 @@ function TicTacToe(){
             </div>
             <div className="game-info">
                 <h4>遊戲歷程</h4>
-                <ol>{moves}</ol>
+                <ul>{moves}</ul>
             </div>
         </div>
     );
